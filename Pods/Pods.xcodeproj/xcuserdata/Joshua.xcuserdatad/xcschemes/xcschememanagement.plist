@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Pods-DeviantArtBrowser-AFNetworkActivityLogger.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-DeviantArtBrowser-AFNetworking.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-DeviantArtBrowser-MBProgressHUD.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-DeviantArtBrowser-MediaRSSParser.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-DeviantArtBrowser.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>06A9B129B19331506DA69D9B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>1DBA3D8E29F364577E3FC976</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B60D495CE99FB3A7E538E74C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C3BB5BC85ECA1416969DED9C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DDC15D4389C906D01BFE276A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
