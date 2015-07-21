@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>2967C437-E4EF-45D8-80D9-3AC0EBFB4BF7</string>
+	<key>IDESourceControlProjectName</key>
+	<string>DeviantArtBrowser</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>B2ACF8FA08C1DDC648B29B9B09FA6CF03FFD2238</key>
+		<string>github.com:theshepherd1/deviant-art-table-view-ios.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>DeviantArtBrowser.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>B2ACF8FA08C1DDC648B29B9B09FA6CF03FFD2238</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:theshepherd1/deviant-art-table-view-ios.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>B2ACF8FA08C1DDC648B29B9B09FA6CF03FFD2238</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>B2ACF8FA08C1DDC648B29B9B09FA6CF03FFD2238</string>
+			<key>IDESourceControlWCCName</key>
+			<string>DeviantArtBrowser_Starter</string>
+		</dict>
+	</array>
+</dict>
+</plist>

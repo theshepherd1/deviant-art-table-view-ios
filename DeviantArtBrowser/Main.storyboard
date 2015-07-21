@@ -56,6 +56,50 @@
                                             <segue destination="cYf-WF-j3i" kind="push" id="IuF-J8-T6A"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" reuseIdentifier="CustomImageCell" rowHeight="141" id="baX-XS-2Z8" customClass="CustomImageTableViewCell" customModule="DeviantArtBrowser" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="baX-XS-2Z8" id="3XT-RN-dJ3">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="751" verticalHuggingPriority="751" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" placeholderIntrinsicWidth="149" placeholderIntrinsicHeight="20.5" text="Title" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XxF-S9-hqo">
+                                                    <rect key="frame" x="140" y="16" width="149" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="750" verticalHuggingPriority="750" placeholderIntrinsicWidth="149" placeholderIntrinsicHeight="43.5" text="Subtitle" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I3m-Bf-2XW">
+                                                    <rect key="frame" x="140" y="36" width="149" height="80.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="1" blue="0.079419953939999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="O6W-4d-ELj">
+                                                    <rect key="frame" x="24" y="24" width="100" height="100"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="100" id="0CZ-eu-tKX"/>
+                                                        <constraint firstAttribute="height" constant="100" id="sGl-9t-6wk"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="O6W-4d-ELj" firstAttribute="top" secondItem="3XT-RN-dJ3" secondAttribute="topMargin" constant="16" id="LOv-Xy-vhe"/>
+                                                <constraint firstItem="I3m-Bf-2XW" firstAttribute="leading" secondItem="O6W-4d-ELj" secondAttribute="trailing" constant="16" id="YZn-pJ-7Vx"/>
+                                                <constraint firstItem="XxF-S9-hqo" firstAttribute="top" secondItem="3XT-RN-dJ3" secondAttribute="top" constant="16" id="a8k-kB-pXq"/>
+                                                <constraint firstItem="I3m-Bf-2XW" firstAttribute="top" secondItem="XxF-S9-hqo" secondAttribute="bottom" id="eeE-qa-f0N"/>
+                                                <constraint firstItem="O6W-4d-ELj" firstAttribute="leading" secondItem="3XT-RN-dJ3" secondAttribute="leadingMargin" constant="16" id="sAC-Fc-WGK"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="I3m-Bf-2XW" secondAttribute="bottom" constant="16" id="sqS-Qm-KJ7"/>
+                                                <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="O6W-4d-ELj" secondAttribute="bottom" priority="999" constant="16" id="u4M-Y7-pYc"/>
+                                                <constraint firstItem="XxF-S9-hqo" firstAttribute="leading" secondItem="O6W-4d-ELj" secondAttribute="trailing" constant="16" id="vc4-Xn-ttQ"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="customImageView" destination="O6W-4d-ELj" id="r6U-nE-nKu"/>
+                                            <outlet property="subtitleLabel" destination="I3m-Bf-2XW" id="FRl-z5-TM0"/>
+                                            <outlet property="titleLabel" destination="XxF-S9-hqo" id="M5L-0A-nlM"/>
+                                            <segue destination="uVy-lQ-chj" kind="push" id="1NS-L6-H7n"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </prototypes>
                                 <connections>
                                     <outlet property="dataSource" destination="QJX-5Y-cJg" id="cbf-qV-KNR"/>

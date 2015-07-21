@@ -13,6 +13,7 @@ class FeedViewController: UIViewController, UITableViewDataSource, UITableViewDe
   // MARK: Instance Variables
   
     let basicCellIdentifier = "BasicCell"
+    let customImageCellIdentifier = "CustomImageCell"
     
     @IBOutlet var searchTextField: UITextField!
     @IBOutlet var tableView: UITableView!
@@ -126,9 +127,51 @@ class FeedViewController: UIViewController, UITableViewDataSource, UITableViewDe
   }
   
   func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-    let cell = basicCellAtIndexPath(indexPath)
-    return cell
-  }
+    
+    if haveImageAtIndexPath(indexPath) {
+        return imageCellAtIndexPath(indexPath)
+    } else {
+        return basicCellAtIndexPath(indexPath)
+    }
+}
+    
+    func imageCellAtIndexPath(indexPath: NSIndexPath) -> CustomImageTableViewCell {
+        let cell = self.tableView.dequeueReusableCellWithIdentifier(customImageCellIdentifier) as! CustomImageTableViewCell
+        setImageForCell(cell, indexPath: indexPath)
+        setTitleForCell(cell, indexPath: indexPath)
+        setSubtitleForCell(cell, indexPath: indexPath)
+        
+        return cell
+    }
+    
+    func haveImageAtIndexPath(indexPath: NSIndexPath) -> Bool {
+        let item = items[indexPath.row]
+        let mediaThumbnailArray = item.mediaThumbnails as! [RSSMediaThumbnail]
+        
+        for mediaThumbnail in mediaThumbnailArray {
+            if(mediaThumbnail.url != nil) {
+                return true
+            }
+        }
+        return false
+    }
+    
+    func setImageForCell(cell:CustomImageTableViewCell, indexPath: NSIndexPath) {
+        let item: RSSItem = items[indexPath.row]
+        var mediaThumbnail: RSSMediaThumbnail?
+        
+        if(item.mediaThumbnails.count >= 2) {
+            mediaThumbnail = item.mediaThumbnails[1] as? RSSMediaThumbnail
+        } else {
+            mediaThumbnail = item.mediaThumbnails.first as? RSSMediaThumbnail
+        }
+        
+        cell.imageView?.image = nil
+        
+        if let url = mediaThumbnail?.url {
+            cell.imageView?.setImageWithURL(url)
+        }
+    }
   
 
     func basicCellAtIndexPath(indexPath: NSIndexPath) -> BasicCellTableViewCell {

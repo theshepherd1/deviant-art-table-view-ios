@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		02DE844B1B5E8AAA002B1EA3 /* BasicCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DE844A1B5E8AAA002B1EA3 /* BasicCellTableViewCell.swift */; };
+		02DE844D1B5EC7D8002B1EA3 /* CustomImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DE844C1B5EC7D8002B1EA3 /* CustomImageTableViewCell.swift */; };
 		2FB395E1E84E4B3D1D5FAD90 /* libPods-DeviantArtBrowser.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EBD015F0ECD986AF2D24C796 /* libPods-DeviantArtBrowser.a */; };
 		4259A9DF19F8C91200BCB608 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4259A9DE19F8C91200BCB608 /* AppDelegate.swift */; };
 		4259A9E119F8C91200BCB608 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4259A9E019F8C91200BCB608 /* FeedViewController.swift */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		02DE844A1B5E8AAA002B1EA3 /* BasicCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicCellTableViewCell.swift; sourceTree = "<group>"; };
+		02DE844C1B5EC7D8002B1EA3 /* CustomImageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomImageTableViewCell.swift; sourceTree = "<group>"; };
 		2A2CA53497AB6A1EDDB3CE63 /* Pods-DeviantArtBrowser.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeviantArtBrowser.release.xcconfig"; path = "Pods/Target Support Files/Pods-DeviantArtBrowser/Pods-DeviantArtBrowser.release.xcconfig"; sourceTree = "<group>"; };
 		4259A9D919F8C91200BCB608 /* DeviantArtBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeviantArtBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4259A9DD19F8C91200BCB608 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 		4259A9D019F8C91200BCB608 = {
 			isa = PBXGroup;
 			children = (
+				02DE844C1B5EC7D8002B1EA3 /* CustomImageTableViewCell.swift */,
 				4259A9DB19F8C91200BCB608 /* DeviantArtBrowser */,
 				4259A9DA19F8C91200BCB608 /* Products */,
 				D8B75730B5302C4F0C0519A7 /* Pods */,
@@ -226,6 +229,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				02DE844B1B5E8AAA002B1EA3 /* BasicCellTableViewCell.swift in Sources */,
+				02DE844D1B5EC7D8002B1EA3 /* CustomImageTableViewCell.swift in Sources */,
 				42E5EAAB19F8CD62009BC414 /* DetailViewController.swift in Sources */,
 				4259A9E119F8C91200BCB608 /* FeedViewController.swift in Sources */,
 				4259A9DF19F8C91200BCB608 /* AppDelegate.swift in Sources */,
